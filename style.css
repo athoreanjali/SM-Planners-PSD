@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    padding: 0;
+}
+
+:disabled {
+    cursor: not-allowed;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+label {
+    display: inline-block;
+}
+
+iframe {
+    border: none;
+    max-width: 100%;
+}
+
+
+@font-face {
+    font-family: mb;
+    src: url(../fonts/majesti-banner-book-webfont.woff2);
+    font-display: swap;
+}
+
+html {
+    font-size: 15px;
+    --mont: 'Montserrat', sans-serif;
+    --green: #213532;
+    --gold: #e0c48f;
+    --lg: #10baae;
+    --maj: mb, serif;
+}
+
+body {
+    font: 13px var(--mont);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -1rem;
+}
+
+[class^="col-"] {
+    flex: 1 0 auto;
+    padding: 0 1rem;
+}
+
+.col-1 {
+    flex-basis: 8.33%;
+    max-width: 8.33%;
+}
+
+.col-2 {
+    flex-basis: 16.66%;
+    max-width: 16.66%;
+}
+
+.col-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+
+.col-4 {
+    flex-basis: 33.33336%;
+    max-width: 33.33336%;
+}
+
+.col-5 {
+    flex-basis: 41.66%;
+    max-width: 41.66%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.col-7 {
+    flex-basis: 58.33%;
+    max-width: 58.33%;
+}
+
+.col-8 {
+    flex-basis: 66.66%;
+    max-width: 66.66%;
+}
+
+.col-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+
+.col-10 {
+    flex-basis: 83.33%;
+    max-width: 83.33%;
+}
+
+.col-11 {
+    flex-basis: 91.66%;
+    max-width: 91.66%;
+}
+
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.img-resp {
+    max-width: 100%;
+    height: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.just-center {
+    justify-content: center;
+}
+
+.just-right {
+    justify-content: right;
+}
+
+.space-bet {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* layout */
+.wrap-1 {
+    background: var(--green);
+    color: #fff;
+    padding: 13px 0;
+}
+
+.wrap-1 nav {
+    height: 100%;
+}
+
+.wrap-1 ul {
+    height: 100%;
+}
+
+.wrap-1 li {
+    margin-left: 22px;
+}
+
+.wrap-1 nav a {
+    color: inherit;
+    font-size: 14px;
+    width: 146px;
+    border: 3px solid;
+    line-height: 39px;
+    display: block;
+    text-align: center;
+}
+
+.wrap-1 a.active {
+    background: var(--lg);
+    border-color: var(--lg);
+}
+
+.wrap-1 a.last {
+    color: var(--gold);
+}
+
+.btnmob {
+    display: none;
+    width: 146px;
+    border: 3px solid;
+    height: 45px;
+    background: transparent;
+    color: var(--gold);
+}
+
+.btnmob span {
+    display: block;
+    width: 120px;
+    height: 2px;
+    background: var(--gold);
+    margin: 8px auto;
+}
+
+.wrap-2 {
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.wrap-2 p {
+    font-family: var(--maj);
+    color: #fff;
+    font-size: 100px;
+    line-height: 1.2;
+    text-shadow: 0 5px 10px #4d4d4d;
+}
+
+.wrap-2 a {
+    display: inline-block;
+    background: #fff;
+    color: #516d69;
+    font-size: 14px;
+    font-weight: bold;
+    width: 185px;
+    line-height: 50px;
+}
+
+
+.wrap-3 {
+    font-family: var(--maj);
+    background: var(--green);
+    color: var(--gold);
+    line-height: 151px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.wrap-4 {
+    background: url(../img/bg2.webp) no-repeat left center #f0f0f2;
+    padding: 78px 0;
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.25;
+    color: #436d67;
+    font-family: var(--maj);
+    white-space: pre-line;
+}
+
+.wrap-4 p {
+    color: #8f9092;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 50px 0;
+}
+
+.wrap-4 a {
+    display: inline-block;
+    width: 185px;
+    line-height: 44px;
+    color: #436d67;
+    border: 3px solid;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+.wrap-5 {
+    padding: 95px 0;
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--maj);
+    font-size: 30px;
+    line-height: 1;
+    color: #436d67;
+    margin: 32px 0 16px;
+}
+
+.wrap-5 p {
+    color: #8f9092;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: left;
+}
+
+
+.wrap-6 {
+    background: #f0f0f2;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.wrap-6 p {
+    color: #8f9092;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+
+
+footer {
+    color: #c7cccc;
+}
+
+.soc li {
+    margin: 1rem;
+}
+
+.soc li a {
+    font-size: 28px;
+    color: inherit;
+}
+
+.wrap-7 {
+    background: var(--green);
+    padding: 21px 0;
+    text-align: center;
+}
+
+.wrap-8 {
+    background: #162724;
+    text-align: center;
+    padding: 25px 0;
+}
+
+.links a {
+    color: inherit;
+    padding: 0 20px;
+}
+
+.links a:not(:first-child) {
+    border-left: 1px solid;
+}
+
+
+
+
+
+
+@media screen and (max-width:1220px) {
+    html {
+        font-size: 13px;
+    }
+
+    .wrap-4 {
+        background-size: 45%;
+    }
+}
+
+@media screen and (max-width:980px) {
+    .col-t-1 {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .col-t-2 {
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .col-t-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-t-4 {
+        flex-basis: 33.3336%;
+        max-width: 33.3336%;
+    }
+
+    .col-t-5 {
+        flex-basis: 41.66%;
+        max-width: 41.66%;
+    }
+
+    .col-t-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-t-7 {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+    }
+
+    .col-t-8 {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+    }
+
+    .col-t-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-t-10 {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .col-t-11 {
+        flex-basis: 91.66%;
+        max-width: 91.66%;
+    }
+
+    .col-t-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .wrap-2 {
+        padding: 100px 0;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    html {
+        font-size: 12px;
+    }
+
+    .col-m-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-m-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .wrap-1 nav {
+        display: none;
+    }
+
+    .btnmob {
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+        top: 40px;
+    }
+
+    .wrap-2 {
+        padding: 80px 0;
+    }
+
+    .wrap-2 p {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .col-p-1 {
+        flex-basis: 8.33%;
+        max-width: 8.33%;
+    }
+
+    .col-p-2 {
+        flex-basis: 16.66%;
+        max-width: 16.66%;
+    }
+
+    .col-p-3 {
+        flex-basis: 25%;
+        max-width: 25%;
+    }
+
+    .col-p-4 {
+        flex-basis: 33.3336%;
+        max-width: 33.3336%;
+    }
+
+    .col-p-5 {
+        flex-basis: 41.66%;
+        max-width: 41.66%;
+    }
+
+    .col-p-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+
+    .col-p-7 {
+        flex-basis: 58.33%;
+        max-width: 58.33%;
+    }
+
+    .col-p-8 {
+        flex-basis: 66.66%;
+        max-width: 66.66%;
+    }
+
+    .col-p-9 {
+        flex-basis: 75%;
+        max-width: 75%;
+    }
+
+    .col-p-10 {
+        flex-basis: 83.33%;
+        max-width: 83.33%;
+    }
+
+    .col-p-11 {
+        flex-basis: 91.66%;
+        max-width: 91.66%;
+    }
+
+    .col-p-12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .wrap-2 {
+        padding: 40px 0;
+    }
+
+    .wrap-2 p {
+        font-size: 40px;
+    }
+
+    .wrap-3 {
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .links a {
+        padding: 0 4px;
+    }
+}
